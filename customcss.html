@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Test Pages &mdash; Breathe 1.0.0 documentation</title>
+    <title>Custom CSS &mdash; Breathe 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -28,40 +28,52 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/theme_extras.js"></script>
     <link rel="top" title="Breathe 1.0.0 documentation" href="index.html" />
-    <link rel="next" title="Doxygen Test Suite" href="doxygen.html" />
-    <link rel="prev" title="How It Works" href="codeguide.html" /> 
+    <link rel="next" title="Groups" href="groups.html" />
+    <link rel="prev" title="Domains" href="domains.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
           <span>Breathe 1.0.0 documentation</span></a></h1>
-        <h2 class="heading"><span>Test Pages</span></h2>
+        <h2 class="heading"><span>Custom CSS</span></h2>
       </div>
       <div class="topnav">
       
         <p>
-        «&#160;&#160;<a href="codeguide.html">How It Works</a>
+        «&#160;&#160;<a href="domains.html">Domains</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="index.html">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="doxygen.html">Doxygen Test Suite</a>&#160;&#160;»
+        <a href="groups.html">Groups</a>&#160;&#160;»
         </p>
 
       </div>
       <div class="content">
         
         
-  <div class="section" id="test-pages">
-<h1>Test Pages<a class="headerlink" href="#test-pages" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen Test Suite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tinyxml.html">TinyXML Test Suite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="specific.html">Specific Examples Test Suite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="embeddedrst.html">Embedded Rst</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inline.html">Inline Parameter Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="members.html">Members Tests</a></li>
-</ul>
+  <div class="section" id="custom-css">
+<h1>Custom CSS<a class="headerlink" href="#custom-css" title="Permalink to this headline">¶</a></h1>
+<p>In order to help with the output styling in HTML, Breathe attaches some custom
+classes to parts of the document. There are three such classes:</p>
+<dl class="docutils">
+<dt><strong>breatheparameterlist</strong></dt>
+<dd><p class="first">Used to keep the description of a parameter displayed inline with the
+parameter name. The Breathe docs use:</p>
+<div class="last highlight-css"><div class="highlight"><pre><span class="nc">.breatheparameterlist</span> <span class="nt">li</span> <span class="nt">tt</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+        <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
+</dd>
+<dt><strong>breatheenumvalues</strong></dt>
+<dd><p class="first">Used to keep the description of an enum displayed inline with the
+enum name. The Breathe docs use:</p>
+<div class="last highlight-css"><div class="highlight"><pre><span class="nc">.breatheenumvalues</span> <span class="nt">li</span> <span class="nt">tt</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+        <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
 </div>
 
 
@@ -69,11 +81,11 @@
       <div class="bottomnav">
       
         <p>
-        «&#160;&#160;<a href="codeguide.html">How It Works</a>
+        «&#160;&#160;<a href="domains.html">Domains</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="index.html">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="doxygen.html">Doxygen Test Suite</a>&#160;&#160;»
+        <a href="groups.html">Groups</a>&#160;&#160;»
         </p>
 
       </div>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -8,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Directives &amp; Config Variables &mdash; Breathe 0.7.5 documentation</title>
+    <title>Directives &amp; Config Variables &mdash; Breathe 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -17,8 +15,8 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '0.7.5',
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,13 +27,13 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 0.7.5 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.0.0 documentation" href="index.html" />
     <link rel="next" title="doxygenfunction Directive Example" href="function.html" />
     <link rel="prev" title="Quickstart" href="quickstart.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 0.7.5 documentation</span></a></h1>
+          <span>Breathe 1.0.0 documentation</span></a></h1>
         <h2 class="heading"><span>Directives &amp; Config Variables</span></h2>
       </div>
       <div class="topnav">
@@ -78,6 +76,9 @@ Sphinx getting confused what should be linked to by other references.</p>
 <dd>Results in Breathe only outputting the raw code definitions without
 any additional description information.</dd>
 </dl>
+<p>If neither project nor path are provided on the directive then breathe will
+expect the <a class="reference internal" href="#default-project"><em>breathe_default_project</em></a> config value to be
+set.</p>
 <div class="section" id="doxygenindex-directive">
 <span id="doxygenindex"></span><h2>doxygenindex Directive<a class="headerlink" href="#doxygenindex-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive processes and produces output for everything described by the
@@ -181,11 +182,17 @@ documentation for only those members that have been named.</p>
 the <tt class="docutils literal"><span class="pre">sections</span></tt> option.</p>
 </dd>
 <dt><tt class="docutils literal"><span class="pre">sections</span></tt></dt>
-<dd>Designed to specialise the default behaviour of the <tt class="docutils literal"><span class="pre">members</span></tt> option.  You
+<dd><p class="first">Designed to specialise the default behaviour of the <tt class="docutils literal"><span class="pre">members</span></tt> option.  You
 can specify a comma-separated list of sections to be included if no specific
 members are named.  The list can accept wildcards.  For instance, if you want
 to display the all protected and public members, functions, etc, then specify
-<tt class="docutils literal"><span class="pre">:sections:</span> <span class="pre">public*,</span> <span class="pre">protected*</span></tt></dd>
+<tt class="docutils literal"><span class="pre">:sections:</span> <span class="pre">public*,</span> <span class="pre">protected*</span></tt>.</p>
+<p>By default, breathe specifies <tt class="docutils literal"><span class="pre">public*</span></tt>.</p>
+<p class="last">Note that if your Doxygen project uses properties, these are excluded by
+default.  Specify <tt class="docutils literal"><span class="pre">:sections:</span> <span class="pre">public*,</span> <span class="pre">property</span></tt> to include both public
+members and properties. (The section names correspond to the values of the
+<tt class="docutils literal"><span class="pre">kind</span></tt> attribute of the Doxygen XML <tt class="docutils literal"><span class="pre">sectiondef</span></tt> elements.)</p>
+</dd>
 </dl>
 <div class="highlight-python"><pre>.. doxygenclass:: &lt;class name&gt;
    :project: ...
@@ -216,7 +223,7 @@ file.</p>
 paths to the folder containing the doxygen output for that project.</p>
 </dd></dl>
 
-<dl class="confval">
+<span class="target" id="default-project"></span><dl class="confval">
 <dt id="confval-breathe_default_project">
 <tt class="descname">breathe_default_project</tt><a class="headerlink" href="#confval-breathe_default_project" title="Permalink to this definition">¶</a></dt>
 <dd><p>This should match one of the keys in the <a class="reference internal" href="#confval-breathe_projects"><tt class="xref std std-confval docutils literal"><span class="pre">breathe_projects</span></tt></a> dictionary and
@@ -275,7 +282,7 @@ above. But if you had one <tt class="docutils literal"><span class="pre">.h</spa
 
     <div class="footer">
         &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
     </div>
   </body>
 </html>

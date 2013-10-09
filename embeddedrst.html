@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -8,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Embedded Rst &mdash; Breathe 0.7.5 documentation</title>
+    <title>Embedded Rst &mdash; Breathe 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -17,8 +15,8 @@
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '0.7.5',
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -29,14 +27,14 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 0.7.5 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.0.0 documentation" href="index.html" />
     <link rel="up" title="Test Pages" href="testpages.html" />
     <link rel="next" title="Inline Parameter Documentation" href="inline.html" />
     <link rel="prev" title="Specific Examples Test Suite" href="specific.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 0.7.5 documentation</span></a></h1>
+          <span>Breathe 1.0.0 documentation</span></a></h1>
         <h2 class="heading"><span>Embedded Rst</span></h2>
       </div>
       <div class="topnav">
@@ -77,9 +75,8 @@
 </div>
 </p>
 <p>This is just a standard verbatim block with code:</p>
-<p><div class="highlight-python"><pre>
-        child = 0;
-        while( child = parent-&gt;IterateChildren( child ) )</pre>
+<p><div class="highlight-python"><pre>    child = 0;
+    while( child = parent-&gt;IterateChildren( child ) )</pre>
 </div>
  </p>
 </p>
@@ -95,6 +92,21 @@
 <p class="last">This reStructuredText has been handled correctly.</p>
 </div>
  </p>
+</div></blockquote>
+<p id=""><span id="project28class_test_class_1a96b768f57cbbd1c325e71269db757826"></span><div class="line-block">
+<div class="line">void <strong>rawLeadingAsteriskVerbatim</strong>()</div>
+</div>
+</p>
+<blockquote>
+<div><p></p>
+<p><p>Inserting additional reStructuredText information.</p>
+<p><p>Some example code:</p>
+<div class="highlight-python"><pre>int example(int x) {
+    return x * 2;
+}</pre>
+</div>
+ </p>
+</p>
 </div></blockquote>
 <p id=""><span id="project28class_test_class_1a91c026e9b4403e1266a57c22d5b925f5"></span><div class="line-block">
 <div class="line">void <strong>testFunction</strong>()</div>
@@ -131,7 +143,7 @@
 
     <div class="footer">
         &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
     </div>
   </body>
 </html>
