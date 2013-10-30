@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>doxygenfunction Directive Example &mdash; Breathe 1.1.0 documentation</title>
+    <title>autodoxygenindex Directive Example &mdash; Breathe 1.1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -29,69 +29,72 @@
     <script type="text/javascript" src="_static/theme_extras.js"></script>
     <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
     <link rel="up" title="Directives &amp; Config Variables" href="directives.html" />
-    <link rel="next" title="doxygenstruct Directive Example" href="struct.html" />
-    <link rel="prev" title="autodoxygenindex Directive Example" href="autoindex.html" /> 
+    <link rel="next" title="doxygenfunction Directive Example" href="function.html" />
+    <link rel="prev" title="Directives &amp; Config Variables" href="directives.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
           <span>Breathe 1.1.0 documentation</span></a></h1>
-        <h2 class="heading"><span>doxygenfunction Directive Example</span></h2>
+        <h2 class="heading"><span>autodoxygenindex Directive Example</span></h2>
       </div>
       <div class="topnav">
       
         <p>
-        «&#160;&#160;<a href="autoindex.html">autodoxygenindex Directive Example</a>
+        «&#160;&#160;<a href="directives.html">Directives &amp; Config Variables</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="index.html">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="struct.html">doxygenstruct Directive Example</a>&#160;&#160;»
+        <a href="function.html">doxygenfunction Directive Example</a>&#160;&#160;»
         </p>
 
       </div>
       <div class="content">
         
         
-  <div class="section" id="doxygenfunction-directive-example">
-<span id="function-example"></span><h1>doxygenfunction Directive Example<a class="headerlink" href="#doxygenfunction-directive-example" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="autodoxygenindex-directive-example">
+<span id="autodoxygenindex-example"></span><h1>autodoxygenindex Directive Example<a class="headerlink" href="#autodoxygenindex-directive-example" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="working-example">
 <h2>Working Example<a class="headerlink" href="#working-example" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenfunction:: open
-   :project: structcmd</pre>
+<div class="highlight-python"><pre>.. autodoxygen:: class.h
+   :source: class</pre>
+</div>
+<p>With the following config value:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">breathe_projects_source</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="s">&quot;class&quot;</span> <span class="p">:</span> <span class="s">&quot;../examples/doxygen&quot;</span>
+     <span class="p">}</span>
+</pre></div>
 </div>
 <p>It produces this output:</p>
-<p id=""><span id="structcmdstructcmd_8h_1a2c4414339f388561554c2deab11a1a07"></span><div class="line-block">
-<div class="line">int <strong>open</strong>(const char * pathname, int flags)</div>
+<div class="line-block">
+<div class="line" id=""><span id="classclass_test"></span><em>class</em> <strong>Test</strong></div>
+<div class="line"><em>#include &#8220;inc/class.h&#8221;</em></div>
 </div>
-</p>
 <blockquote>
-<div><p>Opens a file descriptor. </p>
-<p><p>Detailed description.</p>
-<p><dl class="docutils">
-<dt><strong>Parameters</strong></dt>
-<dd><ul class="breatheparameterlist first last">
-<li><tt class="first docutils literal"><span class="pre">pathname</span></tt> - <p>The name of the descriptor. </p>
-</li>
-<li><tt class="first docutils literal"><span class="pre">flags</span></tt> - <p>Opening flags. </p>
-</li>
-</ul>
-</dd>
-</dl>
-</p>
-</p>
+<div><p>This is a test class. </p>
+<p>Some details about the <a class="reference internal" href="doxygen.html#classclass_test"><em>Test</em></a> class </p>
 </div></blockquote>
+<div class="line-block">
+<div class="line" id=""><span id="classclass_8h"></span><em>file</em> <strong>class.h</strong></div>
 </div>
-<div class="section" id="failing-example">
-<h2>Failing Example<a class="headerlink" href="#failing-example" title="Permalink to this headline">¶</a></h2>
-<p>This intentionally fails:</p>
-<div class="highlight-python"><pre>.. doxygenfunction:: made_up_function
-   :project: structcmd</pre>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<div class="line-block">
+<div class="line" id=""><span id="classdir_55d3c9b5c84e58d75acf19cd0613eae8"></span><em>dir</em> <strong>/home/mike/root/projects/sphinx/breathe/examples/doxygen</strong></div>
 </div>
-<p>It produces the following warning message:</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">doxygenfunction: Cannot find function &#8220;made_up_function&#8221; in doxygen xml output</p>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
+<div class="line-block">
+<div class="line" id=""><span id="classdir_d28a4824dc47e487b107a5db32ef43c4"></span><em>dir</em> <strong>/home/mike/root/projects/sphinx/breathe/examples</strong></div>
 </div>
+<blockquote>
+<div><p></p>
+<p></p>
+</div></blockquote>
 </div>
 </div>
 
@@ -100,11 +103,11 @@
       <div class="bottomnav">
       
         <p>
-        «&#160;&#160;<a href="autoindex.html">autodoxygenindex Directive Example</a>
+        «&#160;&#160;<a href="directives.html">Directives &amp; Config Variables</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="index.html">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="struct.html">doxygenstruct Directive Example</a>&#160;&#160;»
+        <a href="function.html">doxygenfunction Directive Example</a>&#160;&#160;»
         </p>
 
       </div>
