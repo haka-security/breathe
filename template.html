@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Template &mdash; Breathe 1.1.0 documentation</title>
+    <title>Template &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,14 +25,13 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="next" title="Latex Math" href="latexmath.html" />
     <link rel="prev" title="Groups" href="groups.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Template</span></h2>
       </div>
       <div class="topnav">
@@ -54,15 +52,16 @@
 <h1>Template<a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h1>
 <p>Breathe has support for class and function templates. They are output as
 follows. For a class with a single template parameter:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: templateclass
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: templateclass
    :project: template_class
-   :members:</pre>
+   :members:
+</pre></div>
 </div>
 <p>It renders as:</p>
 <hr class="docutils" />
-<div class="line-block">
-<div class="line">template &lt; typename T &gt;</div>
-<div class="line" id="templateclass"><span id="template_classclasstemplateclass"></span><em>class</em> <strong>templateclass</strong></div>
+<div class="line-block" id="template_classclasstemplateclass">
+<span id="templateclass"></span><div class="line">template &lt; typename T &gt;</div>
+<div class="line"><em>class</em> <strong>templateclass</strong></div>
 </div>
 <blockquote>
 <div><p>a class with a template parameter </p>
@@ -76,7 +75,7 @@ follows. For a class with a single template parameter:</p>
 </dl>
 </p>
 <em>Public Functions</em><blockquote>
-<div><p id="templateclass:T:::templateclass"><span id="template_classclasstemplateclass_1a6fbd2779dc3aa9a8e91092006fa70061"></span><div class="line-block">
+<div><p><span class="target" id="templateclass:T:::templateclass"></span><span class="target" id="template_classclasstemplateclass_1a6fbd2779dc3aa9a8e91092006fa70061"></span><div class="line-block">
 <div class="line"> <strong>templateclass</strong>()</div>
 </div>
 </p>
@@ -84,7 +83,7 @@ follows. For a class with a single template parameter:</p>
 <div><p>default constructor </p>
 <p></p>
 </div></blockquote>
-<p id="templateclass:T:::templateclass__TCR"><span id="template_classclasstemplateclass_1ad6c6bda24d0fa7e1c4d36928eaf21d75"></span><div class="line-block">
+<p><span class="target" id="templateclass:T:::templateclass__TCR"></span><span class="target" id="template_classclasstemplateclass_1ad6c6bda24d0fa7e1c4d36928eaf21d75"></span><div class="line-block">
 <div class="line"> <strong>templateclass</strong>(T const &amp; m)</div>
 </div>
 </p>
@@ -100,7 +99,7 @@ follows. For a class with a single template parameter:</p>
 </dl>
 </p>
 </div></blockquote>
-<p id="templateclass:T:::method__TCR"><span id="template_classclasstemplateclass_1ab09f874cd9fcbe0e9bd48ce8859da476"></span><div class="line-block">
+<p><span class="target" id="templateclass:T:::method__TCR"></span><span class="target" id="template_classclasstemplateclass_1ab09f874cd9fcbe0e9bd48ce8859da476"></span><div class="line-block">
 <div class="line">T <strong>method</strong>(T const &amp; t)</div>
 </div>
 </p>
@@ -123,9 +122,9 @@ follows. For a class with a single template parameter:</p>
 <hr class="docutils" />
 <p>With multiple template parameters it renders as:</p>
 <hr class="docutils" />
-<div class="line-block">
-<div class="line">template &lt; typename T, typename U, int N &gt;</div>
-<div class="line" id="anothertemplateclass"><span id="template_class_non_typeclassanothertemplateclass"></span><em>class</em> <strong>anothertemplateclass</strong></div>
+<div class="line-block" id="template_class_non_typeclassanothertemplateclass">
+<span id="anothertemplateclass"></span><div class="line">template &lt; typename T, typename U, int N &gt;</div>
+<div class="line"><em>class</em> <strong>anothertemplateclass</strong></div>
 </div>
 <blockquote>
 <div><p>a class with three template parameters </p>
@@ -143,7 +142,7 @@ follows. For a class with a single template parameter:</p>
 </dl>
 </p>
 <em>Public Functions</em><blockquote>
-<div><p id="anothertemplateclass:T.U.N:::anothertemplateclass"><span id="template_class_non_typeclassanothertemplateclass_1ad819679affc8333086ec48bc8f8c6c52"></span><div class="line-block">
+<div><p><span class="target" id="anothertemplateclass:T.U.N:::anothertemplateclass"></span><span class="target" id="template_class_non_typeclassanothertemplateclass_1ad819679affc8333086ec48bc8f8c6c52"></span><div class="line-block">
 <div class="line"> <strong>anothertemplateclass</strong>()</div>
 </div>
 </p>
@@ -151,7 +150,7 @@ follows. For a class with a single template parameter:</p>
 <div><p>default constructor </p>
 <p></p>
 </div></blockquote>
-<p id="anothertemplateclass:T.U.N:::anothertemplateclass__TCR.UCR"><span id="template_class_non_typeclassanothertemplateclass_1ab639c54eb6ff417c920dd2bcaa2551ce"></span><div class="line-block">
+<p><span class="target" id="anothertemplateclass:T.U.N:::anothertemplateclass__TCR.UCR"></span><span class="target" id="template_class_non_typeclassanothertemplateclass_1ab639c54eb6ff417c920dd2bcaa2551ce"></span><div class="line-block">
 <div class="line"> <strong>anothertemplateclass</strong>(T const &amp; m1, U const &amp; m2)</div>
 </div>
 </p>
@@ -169,7 +168,7 @@ follows. For a class with a single template parameter:</p>
 </dl>
 </p>
 </div></blockquote>
-<p id="anothertemplateclass:T.U.N:::method__TCR"><span id="template_class_non_typeclassanothertemplateclass_1a003cedd0167001f69cf038bf2bc8c632"></span><div class="line-block">
+<p><span class="target" id="anothertemplateclass:T.U.N:::method__TCR"></span><span class="target" id="template_class_non_typeclassanothertemplateclass_1a003cedd0167001f69cf038bf2bc8c632"></span><div class="line-block">
 <div class="line">U <strong>method</strong>(T const &amp; t)</div>
 </div>
 </p>
@@ -192,7 +191,7 @@ follows. For a class with a single template parameter:</p>
 <hr class="docutils" />
 <p>A function with single template parameter renders as:</p>
 <hr class="docutils" />
-<p id="function1__T"><span id="template_functiontemplate__function_8h_1a13e22b2012f793450e924feb5d020c59"></span><div class="line-block">
+<p><span class="target" id="function1__T"></span><span class="target" id="template_functiontemplate__function_8h_1a9da1727b8046a59736818a824009cb8c"></span><div class="line-block">
 <div class="line">template &lt; typename T &gt;</div>
 <div class="line">T <strong>function1</strong>(T arg1)</div>
 </div>
@@ -220,7 +219,7 @@ follows. For a class with a single template parameter:</p>
 <hr class="docutils" />
 <p>With multiple template parameters it renders as:</p>
 <hr class="docutils" />
-<p id="function2__T.U"><span id="template_functiontemplate__function_8h_1a5502fa20d6f69f7af14c2b7dc991d0ea"></span><div class="line-block">
+<p><span class="target" id="function2__T.U"></span><span class="target" id="template_functiontemplate__function_8h_1accd88897868268c91746c58331ab78ec"></span><div class="line-block">
 <div class="line">template &lt; typename T, typename U, int N &gt;</div>
 <div class="line">T <strong>function2</strong>(T arg1, U arg2)</div>
 </div>
@@ -268,8 +267,8 @@ follows. For a class with a single template parameter:</p>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

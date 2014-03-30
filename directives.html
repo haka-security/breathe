@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Directives &amp; Config Variables &mdash; Breathe 1.1.0 documentation</title>
+    <title>Directives &amp; Config Variables &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,14 +25,13 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="next" title="autodoxygenindex Directive Example" href="autoindex.html" />
     <link rel="prev" title="Quickstart" href="quickstart.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Directives &amp; Config Variables</span></h2>
       </div>
       <div class="topnav">
@@ -92,11 +90,12 @@ set.</p>
 <p>This directive processes and produces output for everything described by the
 Doxygen xml output. It reads the <tt class="docutils literal"><span class="pre">index.xml</span></tt> file and process everything
 referenced by it.</p>
-<div class="highlight-python"><pre>.. doxygenindex::
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenindex::
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 </div>
 <div class="section" id="autodoxygenindex-directive">
@@ -107,11 +106,12 @@ provide the paths to the files that you would like to be processed. The final
 generated output will contain all the content from those files.</p>
 <p>Thank you to <a class="reference external" href="https://github.com/scopatz">Scopatz</a> for the idea and initial
 implementation.</p>
-<div class="highlight-python"><pre>.. autodoxygenindex:: &lt;filename&gt; [&lt;filename&gt; [...]]
+<div class="highlight-python"><div class="highlight"><pre>.. autodoxygenindex:: &lt;filename&gt; [&lt;filename&gt; [...]]
    :source: ...
    :source-path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="autoindex.html#autodoxygenindex-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -119,11 +119,12 @@ implementation.</p>
 <h2>doxygenfunction Directive<a class="headerlink" href="#doxygenfunction-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single function. The
 function name is required to be unique in the project.</p>
-<div class="highlight-python"><pre>.. doxygenfunction:: &lt;function name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfunction:: &lt;function name&gt;
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="function.html#function-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -131,11 +132,12 @@ function name is required to be unique in the project.</p>
 <h2>doxygenstruct Directive<a class="headerlink" href="#doxygenstruct-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single struct. The struct
 name is required to be unique in the project.</p>
-<div class="highlight-python"><pre>.. doxygenstruct:: &lt;struct name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenstruct:: &lt;struct name&gt;
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="struct.html#struct-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -143,11 +145,12 @@ name is required to be unique in the project.</p>
 <h2>doxygenenum Directive<a class="headerlink" href="#doxygenenum-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single enum. It behaves
 the same as the doxygenstruct directive.</p>
-<div class="highlight-python"><pre>.. doxygenenum:: &lt;enum name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenenum:: &lt;enum name&gt;
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="enum.html#enum-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -155,11 +158,12 @@ the same as the doxygenstruct directive.</p>
 <h2>doxygentypedef Directive<a class="headerlink" href="#doxygentypedef-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single typedef. It behaves
 the same as the doxygenstruct directive.</p>
-<div class="highlight-python"><pre>.. doxygentypedef:: &lt;typedef name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygentypedef:: &lt;typedef name&gt;
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="typedef.html#typedef-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -167,11 +171,12 @@ the same as the doxygenstruct directive.</p>
 <h2>doxygendefine Directive<a class="headerlink" href="#doxygendefine-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single preprocessor define. It behaves
 the same as the doxygenstruct directive.</p>
-<div class="highlight-python"><pre>.. doxygendefine:: &lt;define name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygendefine:: &lt;define name&gt;
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="define.html#define-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -179,11 +184,12 @@ the same as the doxygenstruct directive.</p>
 <h2>doxygenvariable Directive<a class="headerlink" href="#doxygenvariable-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for a single variable.
 It behaves the same as the doxygenstruct directive.</p>
-<div class="highlight-python"><pre>.. doxygenvariable:: &lt;variable name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenvariable:: &lt;variable name&gt;
    :project: ...
    :path: ...
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="variable.html#variable-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -218,13 +224,14 @@ members and properties. (The section names correspond to the values of the
 <tt class="docutils literal"><span class="pre">kind</span></tt> attribute of the Doxygen XML <tt class="docutils literal"><span class="pre">sectiondef</span></tt> elements.)</p>
 </dd>
 </dl>
-<div class="highlight-python"><pre>.. doxygenclass:: &lt;class name&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: &lt;class name&gt;
    :project: ...
    :path: ...
    :members: [...]
    :sections: [...]
    :outline:
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="class.html#class-example"><em>example</em></a> to see it in action.</p>
 </div>
@@ -232,10 +239,11 @@ members and properties. (The section names correspond to the values of the
 <h2>doxygenfile Directive<a class="headerlink" href="#doxygenfile-directive" title="Permalink to this headline">¶</a></h2>
 <p>This directive generates the appropriate output for the contents of a source
 file.</p>
-<div class="highlight-python"><pre>.. doxygenfile:: &lt;filename&gt;
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfile:: &lt;filename&gt;
    :project: ...
    :path: ...
-   :no-link:</pre>
+   :no-link:
+</pre></div>
 </div>
 <p>Checkout the <a class="reference internal" href="file.html#file-example"><em>example</em></a> to see it in action.</p>
 <div class="section" id="config-values">
@@ -293,8 +301,9 @@ above. But if you had one <tt class="docutils literal"><span class="pre">.h</spa
 paths of the source code for those projects that you would like to be
 automatically processed with doxygen. This saves repetition of long paths
 when using the <tt class="docutils literal"><span class="pre">autodoxygenindex</span></tt> directive. If you have some files in:</p>
-<div class="highlight-python"><pre>/some/long/path/to/myproject/file.c
-/some/long/path/to/myproject/subfolder/otherfile.c</pre>
+<div class="highlight-python"><div class="highlight"><pre>/some/long/path/to/myproject/file.c
+/some/long/path/to/myproject/subfolder/otherfile.c
+</pre></div>
 </div>
 <p>Then you can set:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">breathe_projects_source</span> <span class="o">=</span> <span class="p">{</span>
@@ -303,8 +312,9 @@ when using the <tt class="docutils literal"><span class="pre">autodoxygenindex</
 </pre></div>
 </div>
 <p>Then your <tt class="docutils literal"><span class="pre">autodoxygenindex</span></tt> usage can look like this:</p>
-<div class="highlight-python"><pre>.. autodoxygenindex:: file.c subfolder/otherfile.c
-   :source: myprojectsource</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. autodoxygenindex:: file.c subfolder/otherfile.c
+   :source: myprojectsource
+</pre></div>
 </div>
 </dd></dl>
 
@@ -340,8 +350,8 @@ set up.</p>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Latex Math &mdash; Breathe 1.1.0 documentation</title>
+    <title>Latex Math &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,14 +25,13 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="next" title="Contributing to Breathe" href="contributing.html" />
     <link rel="prev" title="Template" href="template.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Latex Math</span></h2>
       </div>
       <div class="topnav">
@@ -54,7 +52,7 @@
 <h1>Latex Math<a class="headerlink" href="#latex-math" title="Permalink to this headline">¶</a></h1>
 <p>Breathe has basic support for latex math markup in the doxygen comments.  A
 class with a comment like:</p>
-<div class="highlight-python"><pre>/**
+<div class="highlight-python"><div class="highlight"><pre>/**
  * @brief A class
  *
  * A inline formula: \f$ f(x) = a + b \f$
@@ -77,11 +75,12 @@ class MathHelper
 public:
   MathHelper() {}
   ~MathHelper() {}
-}</pre>
+}
+</pre></div>
 </div>
 <p>Will be renderer as:</p>
 <div class="line-block">
-<div class="line" id=""><span id="latexmathclass_math_helper"></span><em>class</em> <strong>MathHelper</strong></div>
+<div class="line"><em>class</em> <strong>MathHelper</strong></div>
 </div>
 <blockquote>
 <div><p>A class. </p>
@@ -94,7 +93,7 @@ public:
  </p>
 </p>
 <em>Public Functions</em><blockquote>
-<div><p id=""><span id="latexmathclass_math_helper_1ad3839d7555a7aff093b14a3c338e416e"></span><div class="line-block">
+<div><p><div class="line-block">
 <div class="line"> <strong>MathHelper</strong>()</div>
 </div>
 </p>
@@ -102,7 +101,7 @@ public:
 <div><p></p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="latexmathclass_math_helper_1a1608126c034f4facf768c79684e6d2cd"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line"> <strong>~MathHelper</strong>()</div>
 </div>
 </p>
@@ -149,8 +148,8 @@ much easier.</p>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

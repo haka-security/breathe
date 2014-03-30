@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>doxygenvariable Directive Example &mdash; Breathe 1.1.0 documentation</title>
+    <title>doxygenvariable Directive Example &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,15 +25,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="up" title="Directives &amp; Config Variables" href="directives.html" />
     <link rel="next" title="doxygenfile Directive Example" href="file.html" />
     <link rel="prev" title="doxygendefine Directive Example" href="define.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>doxygenvariable Directive Example</span></h2>
       </div>
       <div class="topnav">
@@ -56,11 +54,12 @@
 <div class="section" id="working-example">
 <h2>Working Example<a class="headerlink" href="#working-example" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenvariable:: global_cache_tree
-   :project: c_file</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenvariable:: global_cache_tree
+   :project: c_file
+</pre></div>
 </div>
 <p>It produces this output:</p>
-<p id=""><span id="c_filec__file_8h_1a9563e61e59c043530449f9b4da1d8ecf"></span>struct  cache_tree <strong>global_cache_tree</strong></p>
+<p><span class="target" id="c_filec__file_8h_1a9563e61e59c043530449f9b4da1d8ecf"></span>struct  cache_tree <strong>global_cache_tree</strong></p>
 <blockquote>
 <div><p>Shared cache tree instance. </p>
 <p></p>
@@ -69,8 +68,9 @@
 <div class="section" id="failing-example">
 <h2>Failing Example<a class="headerlink" href="#failing-example" title="Permalink to this headline">¶</a></h2>
 <p>This intentionally fails:</p>
-<div class="highlight-python"><pre>.. doxygenvariable:: made_up_variable
-   :project: define</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenvariable:: made_up_variable
+   :project: define
+</pre></div>
 </div>
 <p>It produces the following warning message:</p>
 <div class="admonition warning">
@@ -95,8 +95,8 @@
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

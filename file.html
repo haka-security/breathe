@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>doxygenfile Directive Example &mdash; Breathe 1.1.0 documentation</title>
+    <title>doxygenfile Directive Example &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,15 +25,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="up" title="Directives &amp; Config Variables" href="directives.html" />
     <link rel="next" title="Supported Markups" href="markups.html" />
     <link rel="prev" title="doxygenvariable Directive Example" href="variable.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>doxygenfile Directive Example</span></h2>
       </div>
       <div class="topnav">
@@ -56,8 +54,9 @@
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenfile:: nutshell.h
-   :project: nutshell</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfile:: nutshell.h
+   :project: nutshell
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <hr class="docutils" />
@@ -68,7 +67,7 @@
 <div><p></p>
 <p>With a little bit of a elaboration, should you feel it necessary. </p>
 <em>Public Type</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"></span><strong>Tool enum</strong></p>
+<div><p><strong>Tool enum</strong></p>
 <blockquote>
 <div><p>Our toolset. </p>
 <p>The various tools we can opt to use to crack this particular nut </p>
@@ -84,7 +83,7 @@
 </div></blockquote>
 </div></blockquote>
 <em>Public Functions</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1a68edae1c44c7a85b889b0cf88e79939f"></span><div class="line-block">
+<div><p><div class="line-block">
 <div class="line"> <strong>Nutshell</strong>()</div>
 </div>
 </p>
@@ -92,7 +91,7 @@
 <div><p><a class="reference internal" href="index.html#nutshellclass_nutshell"><em>Nutshell</em></a> constructor. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1aa7e84b812e4489584093a76da864297e"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line"> <strong>~Nutshell</strong>()</div>
 </div>
 </p>
@@ -100,7 +99,7 @@
 <div><p><a class="reference internal" href="index.html#nutshellclass_nutshell"><em>Nutshell</em></a> destructor. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">void <strong>crack</strong>(<a class="reference internal" href="index.html#nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"><em>Tool</em></a> tool)</div>
 </div>
 </p>
@@ -118,7 +117,7 @@
 </p>
 </p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">bool <strong>isCracked</strong>()</div>
 </div>
 </p>
@@ -132,7 +131,7 @@
 </div></blockquote>
 </div></blockquote>
 <em>Private Members</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1a144928f8a485dbe64a4db63c2ca5a200"></span>bool <strong>m_isCracked</strong></p>
+<div><p>bool <strong>m_isCracked</strong></p>
 <blockquote>
 <div><p>Our cracked state. </p>
 <p></p>
@@ -144,8 +143,9 @@
 <div class="section" id="example-with-nested-namespaces">
 <h2>Example with Nested Namespaces<a class="headerlink" href="#example-with-nested-namespaces" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenfile:: namespacefile.h
-   :project: namespacefile</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfile:: namespacefile.h
+   :project: namespacefile
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <hr class="docutils" />
@@ -156,7 +156,7 @@
 <div><p></p>
 <p></p>
 <em>Functions</em><blockquote>
-<div><p id="foo::baz"><span id="namespacefilenamespacefoo_1a5e555a632c85f009cd88665b2d01c065"></span><div class="line-block">
+<div><p><span class="target" id="foo::baz"></span><span class="target" id="namespacefilenamespacefoo_1a5e555a632c85f009cd88665b2d01c065"></span><div class="line-block">
 <div class="line">int <strong>baz</strong>()</div>
 </div>
 </p>
@@ -182,14 +182,14 @@
 <div><p>More examples in a nested namespace. </p>
 <p></p>
 <em>Typedefs</em><blockquote>
-<div><p id=""><span id="namespacefilenamespacefoo_1_1ns_1a4cf8d490905e65657416c79786684a6e"></span>typedef int <strong>MyInt</strong></p>
+<div><p><span class="target" id="namespacefilenamespacefoo_1_1ns_1a4cf8d490905e65657416c79786684a6e"></span>typedef int <strong>MyInt</strong></p>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
 </div></blockquote>
 <em>Enums</em><blockquote>
-<div><p id=""><span id="namespacefilenamespacefoo_1_1ns_1a9c4aa7a6f0ba47c8af0933d48174a954"></span><strong>Letters enum</strong></p>
+<div><p><span class="target" id="namespacefilenamespacefoo_1_1ns_1a9c4aa7a6f0ba47c8af0933d48174a954"></span><strong>Letters enum</strong></p>
 <blockquote>
 <div><p></p>
 <p></p>
@@ -229,21 +229,24 @@
 <p>When there are multiple files with the same name in the project, you need to be
 more specific with the filename you provide. For example, in a project with the
 following two files:</p>
-<div class="highlight-python"><pre>/some/long/project/path/parser/Util.h
-/some/long/project/path/finder/Util.h</pre>
+<div class="highlight-python"><div class="highlight"><pre>/some/long/project/path/parser/Util.h
+/some/long/project/path/finder/Util.h
+</pre></div>
 </div>
 <p>You should specify:</p>
-<div class="highlight-python"><pre>.. doxygenfile:: parser/Util.h
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfile:: parser/Util.h
 
-.. doxygenfile:: finder/Util.h</pre>
+.. doxygenfile:: finder/Util.h
+</pre></div>
 </div>
 <p>To uniquely identify them.</p>
 </div>
 <div class="section" id="failing-example">
 <h2>Failing Example<a class="headerlink" href="#failing-example" title="Permalink to this headline">¶</a></h2>
 <p>This intentionally fails:</p>
-<div class="highlight-python"><pre>.. doxygenfile:: made_up_file.h
-   :project: nutshell</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfile:: made_up_file.h
+   :project: nutshell
+</pre></div>
 </div>
 <p>It produces the following warning message:</p>
 <div class="admonition warning">
@@ -268,8 +271,8 @@ following two files:</p>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

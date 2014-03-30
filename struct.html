@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>doxygenstruct Directive Example &mdash; Breathe 1.1.0 documentation</title>
+    <title>doxygenstruct Directive Example &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,15 +25,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="up" title="Directives &amp; Config Variables" href="directives.html" />
     <link rel="next" title="doxygenclass Directive Example" href="class.html" />
     <link rel="prev" title="doxygenfunction Directive Example" href="function.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>doxygenstruct Directive Example</span></h2>
       </div>
       <div class="topnav">
@@ -56,23 +54,24 @@
 <div class="section" id="example-with-full-description">
 <h2>Example with Full Description<a class="headerlink" href="#example-with-full-description" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenstruct:: CoordStruct
-   :project: restypedef</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenstruct:: CoordStruct
+   :project: restypedef
+</pre></div>
 </div>
 <p>It produces this output:</p>
-<div class="line-block">
-<div class="line" id=""><span id="restypedefstruct_coord_struct"></span><em>struct</em> <strong>CoordStruct</strong></div>
+<div class="line-block" id="restypedefstruct_coord_struct">
+<div class="line"><em>struct</em> <strong>CoordStruct</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p>A coordinate pair. </p>
 <em>Public Members</em><blockquote>
-<div><p id=""><span id="restypedefstruct_coord_struct_1a183d7226fc5a8470ce9b9f04f9cb69bb"></span>float <strong>x</strong></p>
+<div><p><span class="target" id="restypedefstruct_coord_struct_1a183d7226fc5a8470ce9b9f04f9cb69bb"></span>float <strong>x</strong></p>
 <blockquote>
 <div><p></p>
 <p>The x coordinate </p>
 </div></blockquote>
-<p id=""><span id="restypedefstruct_coord_struct_1a1a5966a881bc3e76e9becf00639585ac"></span>float <strong>y</strong></p>
+<p><span class="target" id="restypedefstruct_coord_struct_1a1a5966a881bc3e76e9becf00639585ac"></span>float <strong>y</strong></p>
 <blockquote>
 <div><p></p>
 <p>The y coordinate </p>
@@ -83,24 +82,25 @@
 <div class="section" id="example-with-outline">
 <h2>Example with Outline<a class="headerlink" href="#example-with-outline" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenstruct:: CoordStruct
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenstruct:: CoordStruct
    :project: restypedef
-   :outline:</pre>
+   :outline:
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <div class="line-block">
-<div class="line" id=""><span id="restypedefstruct_coord_struct"></span><em>struct</em> <strong>CoordStruct</strong></div>
+<div class="line"><em>struct</em> <strong>CoordStruct</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 <em>Public Members</em><blockquote>
-<div><p id=""><span id="restypedefstruct_coord_struct_1a183d7226fc5a8470ce9b9f04f9cb69bb"></span>float <strong>x</strong></p>
+<div><p>float <strong>x</strong></p>
 <blockquote>
 <div><p></p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="restypedefstruct_coord_struct_1a1a5966a881bc3e76e9becf00639585ac"></span>float <strong>y</strong></p>
+<p>float <strong>y</strong></p>
 <blockquote>
 <div><p></p>
 <p></p>
@@ -111,12 +111,13 @@
 <div class="section" id="example-with-namespace">
 <h2>Example with Namespace<a class="headerlink" href="#example-with-namespace" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenstruct:: foo::ns::FooStruct
-   :project: namespacefile</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenstruct:: foo::ns::FooStruct
+   :project: namespacefile
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <div class="line-block">
-<div class="line" id=""><span id="namespacefilestructfoo_1_1ns_1_1_foo_struct"></span><em>struct</em> <strong>foo::ns::FooStruct</strong></div>
+<div class="line"><em>struct</em> <strong>foo::ns::FooStruct</strong></div>
 <div class="line"><em>#include &lt;namespacefile.h&gt;</em></div>
 </div>
 <blockquote>
@@ -127,8 +128,9 @@
 <div class="section" id="failing-example">
 <h2>Failing Example<a class="headerlink" href="#failing-example" title="Permalink to this headline">¶</a></h2>
 <p>This intentionally fails:</p>
-<div class="highlight-python"><pre>.. doxygenstruct:: made_up_struct
-   :project: restypedef</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenstruct:: made_up_struct
+   :project: restypedef
+</pre></div>
 </div>
 <p>It produces the following warning message:</p>
 <div class="admonition warning">
@@ -153,8 +155,8 @@
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

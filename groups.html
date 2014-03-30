@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Groups &mdash; Breathe 1.1.0 documentation</title>
+    <title>Groups &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,14 +25,13 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="next" title="Template" href="template.html" />
     <link rel="prev" title="Custom CSS" href="customcss.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Groups</span></h2>
       </div>
       <div class="topnav">
@@ -88,20 +86,21 @@
 </pre></div>
 </div>
 <p>If we reference this with a directive, for example:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: Test
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: Test
    :project: userdefined
-   :members:</pre>
+   :members:
+</pre></div>
 </div>
 <p>It renders as:</p>
-<div class="line-block">
-<div class="line" id="Test"><span id="userdefinedclass_test"></span><em>class</em> <strong>Test</strong></div>
+<div class="line-block" id="userdefinedclass_test">
+<span id="Test"></span><div class="line"><em>class</em> <strong>Test</strong></div>
 </div>
 <blockquote>
 <div><p>A class. </p>
 <p>More details about the <a class="reference internal" href="#userdefinedclass_test"><em>Test</em></a> class </p>
 <em>Custom Group</em><blockquote>
 <div><p>Description of custom group </p>
-<p id="Test::func1InCustomGroup"><span id="userdefinedclass_test_1a70ef926b89c8a5651d825de9cdf5a67b"></span><div class="line-block">
+<p><span class="target" id="Test::func1InCustomGroup"></span><span class="target" id="userdefinedclass_test_1a70ef926b89c8a5651d825de9cdf5a67b"></span><div class="line-block">
 <div class="line">void <strong>func1InCustomGroup</strong>()</div>
 </div>
 </p>
@@ -109,7 +108,7 @@
 <div><p>Function 1 in custom group. </p>
 <p>Details. </p>
 </div></blockquote>
-<p id="Test::func2InCustomGroup"><span id="userdefinedclass_test_1a8a96a2602db430f4a568a0e21cc5f58f"></span><div class="line-block">
+<p><span class="target" id="Test::func2InCustomGroup"></span><span class="target" id="userdefinedclass_test_1a8a96a2602db430f4a568a0e21cc5f58f"></span><div class="line-block">
 <div class="line">void <strong>func2InCustomGroup</strong>()</div>
 </div>
 </p>
@@ -119,7 +118,7 @@
 </div></blockquote>
 </div></blockquote>
 <em>Unnamed Group</em><blockquote>
-<div><p id="Test::func1InGroup1"><span id="userdefinedclass_test_1a6bc6dad89e6579a1e5b13b73005627c6"></span><div class="line-block">
+<div><p><span class="target" id="Test::func1InGroup1"></span><span class="target" id="userdefinedclass_test_1a6bc6dad89e6579a1e5b13b73005627c6"></span><div class="line-block">
 <div class="line">void <strong>func1InGroup1</strong>()</div>
 </div>
 </p>
@@ -127,7 +126,7 @@
 <div><p>Same documentation for both members. </p>
 <p>Details </p>
 </div></blockquote>
-<p id="Test::func2InGroup1"><span id="userdefinedclass_test_1aef9e77656cc32dfe502e92f07855b2ba"></span><div class="line-block">
+<p><span class="target" id="Test::func2InGroup1"></span><span class="target" id="userdefinedclass_test_1aef9e77656cc32dfe502e92f07855b2ba"></span><div class="line-block">
 <div class="line">void <strong>func2InGroup1</strong>()</div>
 </div>
 </p>
@@ -137,7 +136,7 @@
 </div></blockquote>
 </div></blockquote>
 <em>Public Functions</em><blockquote>
-<div><p id="Test::ungroupedFunction"><span id="userdefinedclass_test_1a4c111d6093bba0683dda9e4de5bd9bac"></span><div class="line-block">
+<div><p><span class="target" id="Test::ungroupedFunction"></span><span class="target" id="userdefinedclass_test_1a4c111d6093bba0683dda9e4de5bd9bac"></span><div class="line-block">
 <div class="line">void <strong>ungroupedFunction</strong>()</div>
 </div>
 </p>
@@ -170,8 +169,8 @@ will number the groups and so name them as Group1, Group2, Group3, etc.</p>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

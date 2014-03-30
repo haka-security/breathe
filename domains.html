@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Domains &mdash; Breathe 1.1.0 documentation</title>
+    <title>Domains &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,14 +25,13 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="next" title="Custom CSS" href="customcss.html" />
     <link rel="prev" title="Supported Markups" href="markups.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Domains</span></h2>
       </div>
       <div class="topnav">
@@ -63,13 +61,14 @@ domain roles like <tt class="docutils literal"><span class="pre">:c:func:`foo`</
 <div class="section" id="class-example">
 <h2>Class Example<a class="headerlink" href="#class-example" title="Permalink to this headline">¶</a></h2>
 <p>Given the following Breathe directives:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: testnamespace::NamespacedClassTest
-   :path: ../examples/specific/class/xml</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: testnamespace::NamespacedClassTest
+   :path: ../examples/specific/class/xml
+</pre></div>
 </div>
 <p>Which create formatted output like:</p>
 <blockquote>
-<div><div class="line-block">
-<div class="line" id="testnamespace::NamespacedClassTest"><span id="project0classtestnamespace_1_1_namespaced_class_test"></span><em>class</em> <strong>testnamespace::NamespacedClassTest</strong></div>
+<div><div class="line-block" id="project0classtestnamespace_1_1_namespaced_class_test">
+<span id="testnamespace::NamespacedClassTest"></span><div class="line"><em>class</em> <strong>testnamespace::NamespacedClassTest</strong></div>
 </div>
 <blockquote>
 <div><p>first class inside of namespace </p>
@@ -77,25 +76,28 @@ domain roles like <tt class="docutils literal"><span class="pre">:c:func:`foo`</
 </div></blockquote>
 </div></blockquote>
 <p>We can refer to <strong>NamespacedClassTest</strong> using:</p>
-<div class="highlight-python"><pre>:cpp:class:`testnamespace::NamespacedClassTest`</pre>
+<div class="highlight-python"><div class="highlight"><pre>:cpp:class:`testnamespace::NamespacedClassTest`
+</pre></div>
 </div>
 <p>which renders as <a class="reference internal" href="#testnamespace::NamespacedClassTest" title="testnamespace::NamespacedClassTest"><tt class="xref cpp cpp-class docutils literal"><span class="pre">testnamespace::NamespacedClassTest</span></tt></a>, or using:</p>
-<div class="highlight-python"><pre>:cpp:class:`another reference &lt;testnamespace::NamespacedClassTest&gt;`</pre>
+<div class="highlight-python"><div class="highlight"><pre>:cpp:class:`another reference &lt;testnamespace::NamespacedClassTest&gt;`
+</pre></div>
 </div>
 <p>which renders as: <a class="reference internal" href="#testnamespace::NamespacedClassTest" title="testnamespace::NamespacedClassTest"><tt class="xref cpp cpp-class docutils literal"><span class="pre">another</span> <span class="pre">reference</span></tt></a>.</p>
 </div>
 <div class="section" id="function-examples">
 <h2>Function Examples<a class="headerlink" href="#function-examples" title="Permalink to this headline">¶</a></h2>
 <p>Given the following Breathe directives:</p>
-<div class="highlight-python"><pre>.. doxygenfunction:: testnamespace::NamespacedClassTest::function
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenfunction:: testnamespace::NamespacedClassTest::function
    :path: ../examples/specific/class/xml
 
 .. doxygenfunction:: frob_foos
-   :path: ../examples/specific/alias/xml</pre>
+   :path: ../examples/specific/alias/xml
+</pre></div>
 </div>
 <p>Which create formatted output like:</p>
 <blockquote>
-<div><p id="testnamespace::NamespacedClassTest::functionC"><span id="project0classtestnamespace_1_1_namespaced_class_test_1a7f70f6d7d019b0f464487517376613ef"></span><div class="line-block">
+<div><p><span class="target" id="testnamespace::NamespacedClassTest::functionC"></span><span class="target" id="project0classtestnamespace_1_1_namespaced_class_test_1a7f70f6d7d019b0f464487517376613ef"></span><div class="line-block">
 <div class="line">void <strong>function</strong>()</div>
 </div>
 </p>
@@ -103,7 +105,7 @@ domain roles like <tt class="docutils literal"><span class="pre">:c:func:`foo`</
 <div><p>namespaced class function </p>
 <p></p>
 </div></blockquote>
-<p id="frob_foos"><span id="project1alias_8h_1ad2ab33157d9671ba2215d8d22dac3931"></span><div class="line-block">
+<p><span class="target" id="frob_foos"></span><span class="target" id="project1alias_8h_1ad2ab33157d9671ba2215d8d22dac3931"></span><div class="line-block">
 <div class="line">void <strong>frob_foos</strong>(void * Frobs)</div>
 </div>
 </p>
@@ -131,20 +133,24 @@ domain roles like <tt class="docutils literal"><span class="pre">:c:func:`foo`</
 </div></blockquote>
 </div></blockquote>
 <p>We can refer to <strong>function</strong> using:</p>
-<div class="highlight-python"><pre>:cpp:func:`testnamespace::NamespacedClassTest::function()`</pre>
+<div class="highlight-python"><div class="highlight"><pre>:cpp:func:`testnamespace::NamespacedClassTest::function()`
+</pre></div>
 </div>
 <p>which renders as <a class="reference internal" href="#testnamespace::NamespacedClassTest::functionC" title="testnamespace::NamespacedClassTest::function"><tt class="xref cpp cpp-func docutils literal"><span class="pre">testnamespace::NamespacedClassTest::function()</span></tt></a>, or using:</p>
-<div class="highlight-python"><pre>:cpp:func:`another reference &lt;testnamespace::NamespacedClassTest::function()&gt;`</pre>
+<div class="highlight-python"><div class="highlight"><pre>:cpp:func:`another reference &lt;testnamespace::NamespacedClassTest::function()&gt;`
+</pre></div>
 </div>
 <p>which renders as: <a class="reference internal" href="#testnamespace::NamespacedClassTest::functionC" title="testnamespace::NamespacedClassTest::function"><tt class="xref cpp cpp-func docutils literal"><span class="pre">another</span> <span class="pre">reference</span></tt></a>.
 Note the use of the <strong>cpp</strong> domain.</p>
 <p>And we can refer to <strong>frob_foos</strong> using:</p>
-<div class="highlight-python"><pre>:c:func:`frob_foos()`</pre>
+<div class="highlight-python"><div class="highlight"><pre>:c:func:`frob_foos()`
+</pre></div>
 </div>
-<p>which renders as: <a class="reference internal" href="#frob_foos" title="frob_foos"><tt class="xref c c-func docutils literal"><span class="pre">frob_foos()</span></tt></a>, or using:</p>
-<div class="highlight-python"><pre>:c:func:`another reference &lt;frob_foos()&gt;`</pre>
+<p>which renders as: <a class="reference internal" href="#c.frob_foos" title="frob_foos"><tt class="xref c c-func docutils literal"><span class="pre">frob_foos()</span></tt></a>, or using:</p>
+<div class="highlight-python"><div class="highlight"><pre>:c:func:`another reference &lt;frob_foos()&gt;`
+</pre></div>
 </div>
-<p>which renders as: <a class="reference internal" href="#frob_foos" title="frob_foos"><tt class="xref c c-func docutils literal"><span class="pre">another</span> <span class="pre">reference</span></tt></a>. Note the use of the <strong>c</strong> domain.</p>
+<p>which renders as: <a class="reference internal" href="#c.frob_foos" title="frob_foos"><tt class="xref c c-func docutils literal"><span class="pre">another</span> <span class="pre">reference</span></tt></a>. Note the use of the <strong>c</strong> domain.</p>
 </div>
 </div>
 
@@ -163,8 +169,8 @@ Note the use of the <strong>cpp</strong> domain.</p>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

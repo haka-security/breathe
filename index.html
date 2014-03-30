@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Breathe’s documentation &mdash; Breathe 1.1.0 documentation</title>
+    <title>Breathe’s documentation &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,13 +25,12 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="#" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="#" />
     <link rel="next" title="Quickstart" href="quickstart.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="#">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Breathe’s documentation</span></h2>
       </div>
       <div class="topnav">
@@ -159,9 +157,10 @@ with a standard Sphinx domain reference.</li>
 </pre></div>
 </div>
 <p>Then in your Sphinx documentation, you add something like this:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: Nutshell
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: Nutshell
    :project: nutshell
-   :members:</pre>
+   :members:
+</pre></div>
 </div>
 <p>With a <tt class="docutils literal"><span class="pre">conf.py</span></tt> setting like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">breathe_projects</span> <span class="o">=</span> <span class="p">{</span>
@@ -175,14 +174,14 @@ with a standard Sphinx domain reference.</li>
 </div>
 <p>You get something like this:</p>
 <hr class="docutils" />
-<div class="line-block">
-<div class="line" id="Nutshell"><span id="nutshellclass_nutshell"></span><em>class</em> <strong>Nutshell</strong></div>
+<div class="line-block" id="nutshellclass_nutshell">
+<span id="Nutshell"></span><div class="line"><em>class</em> <strong>Nutshell</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p>With a little bit of a elaboration, should you feel it necessary. </p>
 <em>Public Type</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"></span><strong>Tool enum</strong></p>
+<div><p><span class="target" id="nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"></span><strong>Tool enum</strong></p>
 <blockquote>
 <div><p>Our toolset. </p>
 <p>The various tools we can opt to use to crack this particular nut </p>
@@ -198,7 +197,7 @@ with a standard Sphinx domain reference.</li>
 </div></blockquote>
 </div></blockquote>
 <em>Public Functions</em><blockquote>
-<div><p id="Nutshell::Nutshell"><span id="nutshellclass_nutshell_1a68edae1c44c7a85b889b0cf88e79939f"></span><div class="line-block">
+<div><p><span class="target" id="Nutshell::Nutshell"></span><span class="target" id="nutshellclass_nutshell_1a68edae1c44c7a85b889b0cf88e79939f"></span><div class="line-block">
 <div class="line"> <strong>Nutshell</strong>()</div>
 </div>
 </p>
@@ -206,7 +205,7 @@ with a standard Sphinx domain reference.</li>
 <div><p><a class="reference internal" href="#nutshellclass_nutshell"><em>Nutshell</em></a> constructor. </p>
 <p></p>
 </div></blockquote>
-<p id="Nutshell::~Nutshell"><span id="nutshellclass_nutshell_1aa7e84b812e4489584093a76da864297e"></span><div class="line-block">
+<p><span class="target" id="Nutshell::~Nutshell"></span><span class="target" id="nutshellclass_nutshell_1aa7e84b812e4489584093a76da864297e"></span><div class="line-block">
 <div class="line"> <strong>~Nutshell</strong>()</div>
 </div>
 </p>
@@ -214,7 +213,7 @@ with a standard Sphinx domain reference.</li>
 <div><p><a class="reference internal" href="#nutshellclass_nutshell"><em>Nutshell</em></a> destructor. </p>
 <p></p>
 </div></blockquote>
-<p id="Nutshell::crack__Tool"><span id="nutshellclass_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span><div class="line-block">
+<p><span class="target" id="Nutshell::crack__Tool"></span><span class="target" id="nutshellclass_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span><div class="line-block">
 <div class="line">void <strong>crack</strong>(<a class="reference internal" href="#nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"><em>Tool</em></a> tool)</div>
 </div>
 </p>
@@ -232,7 +231,7 @@ with a standard Sphinx domain reference.</li>
 </p>
 </p>
 </div></blockquote>
-<p id="Nutshell::isCracked"><span id="nutshellclass_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span><div class="line-block">
+<p><span class="target" id="Nutshell::isCracked"></span><span class="target" id="nutshellclass_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span><div class="line-block">
 <div class="line">bool <strong>isCracked</strong>()</div>
 </div>
 </p>
@@ -264,8 +263,8 @@ with a standard Sphinx domain reference.</li>
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

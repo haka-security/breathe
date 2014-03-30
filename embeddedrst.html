@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Embedded Rst &mdash; Breathe 1.1.0 documentation</title>
+    <title>Embedded Rst &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,15 +25,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="up" title="Test Pages" href="testpages.html" />
     <link rel="next" title="Inline Parameter Documentation" href="inline.html" />
     <link rel="prev" title="Specific Examples Test Suite" href="specific.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>Embedded Rst</span></h2>
       </div>
       <div class="topnav">
@@ -54,14 +52,14 @@
   <div class="section" id="embedded-rst">
 <h1>Embedded Rst<a class="headerlink" href="#embedded-rst" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line" id=""><span id="project28class_test_class"></span><em>class</em> <strong>TestClass</strong></div>
+<div class="line"><em>class</em> <strong>TestClass</strong></div>
 <div class="line"><em>#include &lt;rst.h&gt;</em></div>
 </div>
 <blockquote>
 <div><p>first class inside of namespace </p>
 <p></p>
 <em>Public Functions</em><blockquote>
-<div><p id=""><span id="project28class_test_class_1adb6dc395f016e6c4b3c3df8057558143"></span><div class="line-block">
+<div><p><div class="line-block">
 <div class="line">void <strong>function</strong>()</div>
 </div>
 </p>
@@ -75,13 +73,14 @@
 </div>
 </p>
 <p>This is just a standard verbatim block with code:</p>
-<p><div class="highlight-python"><pre>    child = 0;
-    while( child = parent-&gt;IterateChildren( child ) )</pre>
+<p><div class="highlight-python"><div class="highlight"><pre>    child = 0;
+    while( child = parent-&gt;IterateChildren( child ) )
+</pre></div>
 </div>
  </p>
 </p>
 </div></blockquote>
-<p id=""><span id="project28class_test_class_1ac338ea1b9d0ec4afad7402f8042d28ee"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">void <strong>rawVerbatim</strong>()</div>
 </div>
 </p>
@@ -93,7 +92,7 @@
 </div>
  </p>
 </div></blockquote>
-<p id=""><span id="project28class_test_class_1a96b768f57cbbd1c325e71269db757826"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">void <strong>rawLeadingAsteriskVerbatim</strong>()</div>
 </div>
 </p>
@@ -101,14 +100,15 @@
 <div><p></p>
 <p><p>Inserting additional reStructuredText information.</p>
 <p><p>Some example code:</p>
-<div class="highlight-python"><pre>int example(int x) {
+<div class="highlight-python"><div class="highlight"><pre>int example(int x) {
     return x * 2;
-}</pre>
+}
+</pre></div>
 </div>
  </p>
 </p>
 </div></blockquote>
-<p id=""><span id="project28class_test_class_1a91c026e9b4403e1266a57c22d5b925f5"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">void <strong>testFunction</strong>()</div>
 </div>
 </p>
@@ -119,7 +119,7 @@
 </div></blockquote>
 </div></blockquote>
 <div class="line-block">
-<div class="line" id=""><span id="project28rst_8h"></span><em>file</em> <strong>rst.h</strong></div>
+<div class="line"><em>file</em> <strong>rst.h</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -142,8 +142,8 @@
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>

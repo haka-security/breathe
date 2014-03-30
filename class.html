@@ -6,17 +6,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>doxygenclass Directive Example &mdash; Breathe 1.1.0 documentation</title>
+    <title>doxygenclass Directive Example &mdash; Breathe 1.2.0 documentation</title>
     
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.1.0',
+        VERSION:     '1.2.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,15 +25,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/theme_extras.js"></script>
-    <link rel="top" title="Breathe 1.1.0 documentation" href="index.html" />
+    <link rel="top" title="Breathe 1.2.0 documentation" href="index.html" />
     <link rel="up" title="Directives &amp; Config Variables" href="directives.html" />
     <link rel="next" title="doxygenenum Directive Example" href="enum.html" />
     <link rel="prev" title="doxygenstruct Directive Example" href="struct.html" /> 
   </head>
   <body>
       <div class="header"><h1 class="heading"><a href="index.html">
-          <span>Breathe 1.1.0 documentation</span></a></h1>
+          <span>Breathe 1.2.0 documentation</span></a></h1>
         <h2 class="heading"><span>doxygenclass Directive Example</span></h2>
       </div>
       <div class="topnav">
@@ -56,12 +54,13 @@
 <div class="section" id="example-without-members">
 <h2>Example without Members<a class="headerlink" href="#example-without-members" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: Nutshell
-   :project: nutshell</pre>
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: Nutshell
+   :project: nutshell
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <div class="line-block">
-<div class="line" id=""><span id="nutshellclass_nutshell"></span><em>class</em> <strong>Nutshell</strong></div>
+<div class="line"><em>class</em> <strong>Nutshell</strong></div>
 </div>
 <blockquote>
 <div><p></p>
@@ -71,19 +70,20 @@
 <div class="section" id="example-with-members">
 <h2>Example with Members<a class="headerlink" href="#example-with-members" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: Nutshell
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: Nutshell
    :project: nutshell
-   :members:</pre>
+   :members:
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <div class="line-block">
-<div class="line" id=""><span id="nutshellclass_nutshell"></span><em>class</em> <strong>Nutshell</strong></div>
+<div class="line"><em>class</em> <strong>Nutshell</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p>With a little bit of a elaboration, should you feel it necessary. </p>
 <em>Public Type</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"></span><strong>Tool enum</strong></p>
+<div><p><strong>Tool enum</strong></p>
 <blockquote>
 <div><p>Our toolset. </p>
 <p>The various tools we can opt to use to crack this particular nut </p>
@@ -99,7 +99,7 @@
 </div></blockquote>
 </div></blockquote>
 <em>Public Functions</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1a68edae1c44c7a85b889b0cf88e79939f"></span><div class="line-block">
+<div><p><div class="line-block">
 <div class="line"> <strong>Nutshell</strong>()</div>
 </div>
 </p>
@@ -107,7 +107,7 @@
 <div><p><a class="reference internal" href="index.html#nutshellclass_nutshell"><em>Nutshell</em></a> constructor. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1aa7e84b812e4489584093a76da864297e"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line"> <strong>~Nutshell</strong>()</div>
 </div>
 </p>
@@ -115,7 +115,7 @@
 <div><p><a class="reference internal" href="index.html#nutshellclass_nutshell"><em>Nutshell</em></a> destructor. </p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">void <strong>crack</strong>(<a class="reference internal" href="index.html#nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"><em>Tool</em></a> tool)</div>
 </div>
 </p>
@@ -133,7 +133,7 @@
 </p>
 </p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">bool <strong>isCracked</strong>()</div>
 </div>
 </p>
@@ -151,19 +151,20 @@
 <div class="section" id="working-example-with-specific-members">
 <h2>Working Example with Specific Members<a class="headerlink" href="#working-example-with-specific-members" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: Nutshell
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: Nutshell
    :project: nutshell
-   :members: crack, isCracked</pre>
+   :members: crack, isCracked
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <div class="line-block">
-<div class="line" id=""><span id="nutshellclass_nutshell"></span><em>class</em> <strong>Nutshell</strong></div>
+<div class="line"><em>class</em> <strong>Nutshell</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p>With a little bit of a elaboration, should you feel it necessary. </p>
 <em>Public Functions</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span><div class="line-block">
+<div><p><div class="line-block">
 <div class="line">void <strong>crack</strong>(<a class="reference internal" href="index.html#nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"><em>Tool</em></a> tool)</div>
 </div>
 </p>
@@ -181,7 +182,7 @@
 </p>
 </p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">bool <strong>isCracked</strong>()</div>
 </div>
 </p>
@@ -199,20 +200,21 @@
 <div class="section" id="example-as-outline">
 <h2>Example as Outline<a class="headerlink" href="#example-as-outline" title="Permalink to this headline">¶</a></h2>
 <p>This should work:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: Nutshell
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: Nutshell
    :project: nutshell
    :outline:
-   :members:</pre>
+   :members:
+</pre></div>
 </div>
 <p>It produces this output:</p>
 <div class="line-block">
-<div class="line" id=""><span id="nutshellclass_nutshell"></span><em>class</em> <strong>Nutshell</strong></div>
+<div class="line"><em>class</em> <strong>Nutshell</strong></div>
 </div>
 <blockquote>
 <div><p></p>
 <p></p>
 <em>Public Type</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"></span><strong>Tool enum</strong></p>
+<div><p><strong>Tool enum</strong></p>
 <blockquote>
 <div><p></p>
 <p></p>
@@ -225,7 +227,7 @@
 </div></blockquote>
 </div></blockquote>
 <em>Public Functions</em><blockquote>
-<div><p id=""><span id="nutshellclass_nutshell_1a68edae1c44c7a85b889b0cf88e79939f"></span><div class="line-block">
+<div><p><div class="line-block">
 <div class="line"> <strong>Nutshell</strong>()</div>
 </div>
 </p>
@@ -233,7 +235,7 @@
 <div><p></p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1aa7e84b812e4489584093a76da864297e"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line"> <strong>~Nutshell</strong>()</div>
 </div>
 </p>
@@ -241,7 +243,7 @@
 <div><p></p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">void <strong>crack</strong>(<a class="reference internal" href="index.html#nutshellclass_nutshell_1ae42034231cf912d095d57cbeed6cda79"><em>Tool</em></a> tool)</div>
 </div>
 </p>
@@ -249,7 +251,7 @@
 <div><p></p>
 <p></p>
 </div></blockquote>
-<p id=""><span id="nutshellclass_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span><div class="line-block">
+<p><div class="line-block">
 <div class="line">bool <strong>isCracked</strong>()</div>
 </div>
 </p>
@@ -263,9 +265,10 @@
 <div class="section" id="failing-example">
 <h2>Failing Example<a class="headerlink" href="#failing-example" title="Permalink to this headline">¶</a></h2>
 <p>This intentionally fails:</p>
-<div class="highlight-python"><pre>.. doxygenclass:: made_up_class
+<div class="highlight-python"><div class="highlight"><pre>.. doxygenclass:: made_up_class
    :project: class
-   :members:</pre>
+   :members:
+</pre></div>
 </div>
 <p>It produces the following warning message:</p>
 <div class="admonition warning">
@@ -290,8 +293,8 @@
       </div>
 
     <div class="footer">
-        &copy; Copyright 2009-2010, Michael Jones.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+        &copy; Copyright 2009-2014, Michael Jones.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
     </div>
   </body>
 </html>
